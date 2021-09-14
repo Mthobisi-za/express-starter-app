@@ -20,5 +20,5 @@ describe("factory functions test's", ()=>{
     it("should be able to return the total cost price", ()=>{
         assert.equal(useFactory.getData().total, "0.00")
     });
-    
-})
+
+});

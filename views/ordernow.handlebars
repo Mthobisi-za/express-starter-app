@@ -1,0 +1,17 @@
+
+
+<nav class="nav">
+    <h1 class="h2">Perfect Pizza</h1>
+</nav>
+<div class="navOrder">
+    <h2 class="orderhead" style="text-align: center;">Orders</h2>
+    <br>
+   {{#each orders}}
+ <!---  <p>{{this.orderId}} {{this.status}} R{{this.amount}} <button>{{this.btnName}} </button></p>
+   --->
+   <div class="or">
+        <p>#{{this.orderId}}</p> <p>{{this.status}}</p> <p>R{{this.amount}}</p> <p><a href="/change/{{this.btnName}}/{{this.orderId}}"><button class="btnpay">{{this.btnName}}</button></a> </p>
+   </div>
+   {{/each}}
+  
+</div>

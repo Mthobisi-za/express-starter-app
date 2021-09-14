@@ -1,0 +1,105 @@
+<nav class="nav">
+    <h1 class="h2">Perfect Pizza</h1>
+</nav>
+<nav class="nav2">
+    <h2 class="h22">Shopping Cart</h2>
+    <div class="center">
+        <div class="item">
+            <p class="p">Small</p>
+             <h4>* {{count.smallPizza}}</h4>
+               
+       
+            <p class="p">R<span class="price">{{prizes.smallPizza}}</span></p>
+        </div>
+        <div class="item">
+            <p class="p">Medium</p>
+              <h4>* {{count.mediumPizza}}</h4>
+          
+            <p class="p">R<span class="price">{{prizes.mediumPizza}}</span></p>
+        </div>
+        <div class="item">
+            <p class="p">Large</p>
+              <h4>* {{count.largePizza}}</h4>
+            <p class="p">R<span class="price">{{prizes.largePizza}}</span></p>
+        </div>
+        <div class="item">
+            <p class="p">Total Cost</p>
+            <p class="p">R<span class="price">{{prizes.total}}</span></p>
+        </div>
+        <div class="itemms">
+            <form method="post" action="/ordernow">
+                <input type="hidden" name="smallPizza" value="{{prizes.smallPizza}}">
+                <input type="hidden" name="mediumPizza" value="{{prizes.mediumPizza}}">
+                <input type="hidden" name="largePizza" value="{{prizes.largePizza}}">
+                <input type="hidden" name="total" value="{{prizes.total}}">
+                <button class="check">Order</button>
+            </form>
+        </div>
+        <footer></footer>
+    </div>
+</nav>
+<br> <br>
+
+<nav class="pizzas">
+    
+    <div class="divp">
+        <div class="text">
+            <h3 class="h3p" style="text-align: center;">Large Pizza</h3>
+        </div>
+            <img class="img" src="/images/pizza-removebg-preview.png" alt="">
+        <div class="text">
+
+            <h3 class="h3price">R<span>95.55</span></h3>
+            <p class="ptag">
+                Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.
+            </p> <br>
+            <div class="buy"><a href="/buy/large"><button type="button" class="btn btn-outline-success">Buy</button></a> </div>
+        </div>
+        <footer></footer>
+    </div>
+
+    <div class="divp divp2">
+        <div class="text">
+            <h3 class="h3p" style="text-align: center;">Medium Pizza</h3>
+        </div>
+            <img class="img2" src="/images/pizza-removebg-preview.png" alt="">
+        <div class="text">
+            <h3 class="h3price">R<span>86.55</span></h3>
+            <p class="ptag">
+              
+            A baked dish originating in Italy, which consists of a flat, round, crispy leavened dough covered with a layer of sauce and a layer of one or more toppings
+            </p> <br>
+            <div class="buy"><a href="/buy/medium"> <button type="button" class="btn btn-outline-info">Buy</button></a></div>
+        </div>
+        <footer></footer>
+        </div>
+    </div>
+
+    <div class="divp divp3">
+        <div class="text">
+            <h3 class="h3p" style="text-align: center;">Small Pizza</h3>
+        </div>
+            <img class="img3" src="/images/pizza-removebg-preview.png" alt="">
+        <div class="text">
+
+            <h3 class="h3price">R<span>57.55</span></h3>
+            <p class="ptag">
+              
+            A dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked
+            </p> <br>
+            <div class="buy"><a href="/buy/small"><button type="button" class="btn btn-outline-secondary">Buy</button></a> </div>
+        </div>
+        <footer></footer>
+        </div>
+    </div>
+</nav>
+<footer class="sp">
+    	<div class="contact">
+			<p>Cell Number : 086 987 0987</p>
+		</div>
+		<div class="location">
+			<p>51 sinthumule street, Meadowlands, Johannesburg South africa</p>
+		</div>
+	</footer>
+
+

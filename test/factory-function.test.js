@@ -20,5 +20,18 @@ describe("factory functions test's", ()=>{
     it("should be able to return the total cost price", ()=>{
         assert.equal(useFactory.getData().total, "0.00")
     });
-
+    it("should be to place an order", ()=>{
+        var arrg = [];
+        assert.deepEqual(useFactory.orderNow(150), undefined);
+    })
+    it("should be able to get the order", ()=>{
+        var arrg = [{
+            orderId: -Infinity,
+            status: "payment pending",
+            btnName: "pay",
+            amount: 150
+        }];
+        useFactory.orderNow(150)
+        assert.deepEqual(useFactory.getOrders(),arrg)
+    })
 });
